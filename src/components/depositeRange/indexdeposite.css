@@ -1,0 +1,246 @@
+.container {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* For Chrome, Safari, and Opera */
+/* .container .slider .left input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 34px;
+  height: 34px;
+  background: red;
+  accent-color: coral;
+  border: 10px;
+  border-color: #060ef6;
+  cursor: pointer;
+} */
+/* For Firefox */
+/* .container .slider .left input[type="range"]::-moz-range-thumb {
+  width: 34px;
+  height: 34px;
+  background: red;
+  border: 10px;
+  border-color: #060ef6;
+  cursor: pointer;
+} */
+/* For Chrome, Safari, and Opera */
+.container .slider .Dright input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 34px;
+  height: 34px;
+  background: blue;
+  border:8px solid white;
+  cursor: pointer;
+}
+
+/* For Firefox */
+.container .slider .Dright input[type="range"]::-moz-range-thumb {
+  width: 34px;
+  height: 34px;
+  background: blue;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  width: -webkit-fill-available;
+}
+
+.slider__left-value {
+  border: none;
+}
+
+.slider__Dright-value:before {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 100%);
+  width: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.slider__Dright-value:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 100%);
+  width: 0;
+}
+.slider__left-value,
+.slider__Dright-value,
+.slider__track {
+  position: absolute;
+}
+.Dslider__range,
+.slider__track {
+  width: 100%;
+  z-index: 1;
+  border-radius: 3px;
+  height: 8px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.23) inset;
+}
+
+.slider__track {
+  width: 100%;
+  z-index: 1;
+}
+
+.Dslider__range {
+    z-index: 2;
+    border-radius: 40px;
+    background: var(
+      --Gradient,
+      linear-gradient(90deg, #060ef6 4.86%, #060ef6 99.91%)
+    );
+  }
+.slider__left-value,
+.slider__Dright-value {
+  color: #060ef6;
+  font-size: 12px;
+  translate: calc(-50%);
+}
+.slider__Dright-value {
+  border: none;
+}
+/* Removing the default appearance */
+.thumbdepo,
+.thumbdepo::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.thumbdepo {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: -webkit-fill-available;
+  outline: none;
+}
+
+/* For Chrome browsers */
+.thumbdepo::-webkit-slider-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumbdepo::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__left-value,
+.Dslider__range,
+.slider__Dright-value,
+.slider__track {
+  position: absolute;
+}
+
+.Dslider__range,
+.slider__track {
+  border-radius: 40px;
+  height: 24px;
+}
+
+.slider__track {
+  width: 100%;
+  z-index: 1;
+}
+
+.Dslider__range {
+  background-color: rgb(25, 118, 210);
+  z-index: 2;
+}
+.slider__left-value,
+.slider__Dright-value {
+  color: rgb(25, 118, 210);
+  background-color: white;
+  font-size: 16px;
+  margin-top: -46px;
+  padding: 5px;
+}
+
+/* The toggle switch container */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide the default checkbox */
+.toggle-switch input {
+  display: none;
+}
+
+/* Removing the default appearance */
+.thumbdepo,
+.thumbdepo::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.thumb--left {
+  z-index: 3;
+  margin-top: 8px;
+}
+
+.thumb--Dright {
+  z-index: 5;
+  margin-top: 8px;
+}
+
+/* For Chrome browsers */
+.thumbdepo::-webkit-slider-thumb {
+  background-color: rgb(25, 118, 210);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 6px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumbdepo::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}

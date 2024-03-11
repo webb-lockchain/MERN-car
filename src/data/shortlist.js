@@ -1,0 +1,88 @@
+export default function getData() {
+    return [
+        { 
+            name: "Volvo V401" ,
+            type: "car",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            method: "method",
+            location:"TMC - Huddersfield",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        },
+        { 
+            name: "Volvo V402" ,
+            type: "truck",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            method: "method",
+            location:"TMC - Huddersfield",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        },
+        { 
+            name: "Volvo V403" ,
+            type: "van",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            method: "method",
+            location:"TMC - Huddersfield",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        }, 
+        { 
+            name: "Volvo V404" ,
+            type: "car",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            location:"TMC - Huddersfield",
+            method: "method",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        },
+        { 
+            name: "Volvo V405" ,
+            type: "truck",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            method: "method",
+            location:"TMC - Huddersfield",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        },
+        { 
+            name: "Volvo V406" ,
+            type: "van",
+            price: "12000",
+            desc: "2.2 D2 Momentim Euro 6 (s/s)  5dr",
+            distance: "distance",
+            fuel: "fuel",
+            location:"TMC - Huddersfield",
+            method: "method",
+            image: "https://bluesky.cdn.imgeng.in/cogstock-images/at-82a04bdadeea431dbe169bda21be8016.jpg?imgeng=/w_640/",
+            urlDetail: "/vehicles-for-sale/viewdetail",
+            urlFinance: "/view-finance-detail",
+            from: "from"
+        },
+    ];
+}

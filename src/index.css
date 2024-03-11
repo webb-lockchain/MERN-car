@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Saira+Condensed:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 767px) {
+  .mobile-line {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .thumbs {
+    width: 100vw;
+  }
+}
+.bot .carousel .thumb img{ 
+  width: 75px !important;
+  height: 60px !important;
+
+}
+.bot .carousel .thumbs-wrapper{
+  margin: 0px !important;
+  margin-top:20px !important;
+}
+.bot .thumb {
+  /* width: 60px !important; */
+}
+.toggle-container {
+  width: 100%;
+  background-color: #c4c4c4;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 999px;
+  padding: 2px;
+  height: 50px;
+  position: relative;
+}
+
+.dialog-button {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #002b49;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  min-width: unset;
+  border-radius: 999px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.disabled {
+  background-color: #707070;
+  left: 50%;
+}
+.swiper-button-prev {
+  position: absolute !important;
+  z-index: 10000 !important;
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 22px;
+}
+
+.swiper-button-prev:after {
+  color: #000;
+  font-size: 16px !important;
+  padding: 8px;
+}
+
+.swiper-button-next {
+  position: absolute !important;
+  z-index: 10000 !important;
+  background-color: #f6f6f6;
+  border-radius: 2rem;
+  padding: 22px;
+}
+
+.swiper-button-next:after {
+  color: #000;
+  font-size: 16px !important;
+}
+.bot .carousel img{
+  height: 190px !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbs{
+  width:25vw;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-carousel .carousel .thumb {
+  width: 300px !important;
+}
+
+.carousel .thumb.selected {
+  border: none !important;
+}
+
+.carousel .thumb {
+  border: none !important;
+}
+
+.navitem{
+  color: #000;
+  font-family: Saira Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+.subtitle{
+  color: #222;
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: 900;
+}
+.magictitle{
+  background: var(--Gradient, linear-gradient(90deg, #E91E24 4.86%, #1E32E9 99.91%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: 700;
+}
+.title{
+  color: #FFF;
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.extable{
+  border:1px solid #000;
+  border-radius:0 0 0.75rem 0.75rem;
+}
+
+.mytable {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+td {
+  border: 1px solid #d4d4d4; 
+}
+
+.custom-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create the custom circle */
+.custom-checkbox .checkmark {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #000;
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff; /* Set the color of the check symbol to white */
+}
+
+/* Fill the circle with black color when checked */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #000; /* Set the background color of the circle to black */
+  border-color: #000; /* Set the border color of the circle to black */
+}
+
+
+
+
+
+
+.custom-checkbox1 {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 9999px;
+  margin-top: 8px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox1 input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create the custom circle */
+.custom-checkbox1 .checkmark {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox1 input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #000;
+}
+
+.custom-checkbox1 input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #000; /* Set the color of the check symbol to white */
+}
+
+/* Fill the circle with black color when checked */
+.custom-checkbox1 input:checked + .checkmark {
+  background-color: #fff; /* Set the background color of the circle to black */
+  border-color: #000; /* Set the border color of the circle to black */
+}
+
+
+
+
+
+
+.custom-checkbox2 {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 9999px;
+  /* margin-top: 8px; */
+}
+
+/* Hide the default checkbox */
+.custom-checkbox2 input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create the custom circle */
+.custom-checkbox2 .checkmark {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #f6f6f6;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Define the remove-border class to remove borders for specific elements */
+/* .remove-border,
+.remove-border * {
+  border-style: none;
+} */
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox2 input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff;
+}
+
+.custom-checkbox2 input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff; /* Set the color of the check symbol to white */
+}
+
+/* Fill the circle with black color when checked */
+.custom-checkbox2 input:checked + .checkmark {
+  background-color: #48b74f; /* Set the background color of the circle to black */
+  border-color: #f6f6f6; /* Set the border color of the circle to black */
+}
+
+
+
+
+
+
+.custom-checkboxl {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 9999px;
+  /* margin-top: 8px; */
+}
+
+/* Hide the default checkbox */
+.custom-checkboxl input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create the custom circle */
+.custom-checkboxl .checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkboxl input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff;
+}
+
+.custom-checkboxl input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff; /* Set the color of the check symbol to white */
+}
+
+/* Fill the circle with black color when checked */
+.custom-checkboxl input:checked + .checkmark {
+  background-color: #000; /* Set the background color of the circle to black */
+  border-color: #f6f6f6; /* Set the border color of the circle to black */
+}
+
+
+
+
+
+
+
+.custom-checkboxr {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 9999px;
+  /* margin-top: 8px; */
+}
+
+/* Hide the default checkbox */
+.custom-checkboxr input {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Create the custom circle */
+.custom-checkboxr .checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkboxr input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px;
+  color: #fff;
+}
+
+.custom-checkboxr input:checked + .checkmark:after {
+  content: '\2713';
+  font-size: 16px; 
+  color: #fff; /* Set the color of the check symbol to white */
+}
+
+/* Fill the circle with black color when checked */
+.custom-checkboxr input:checked + .checkmark {
+  background-color: #000; /* Set the background color of the circle to black */
+  border-color: #f6f6f6; /* Set the border color of the circle to black */
+}
+
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  /* border: 1px solid #000; */
+  padding: 4px;
+  text-align: left;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rounded-b-lg {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
